@@ -1,0 +1,8 @@
+<div class="card" style="width: 18rem" *ngFor="let marc of marca">
+  <img  src="{{marc.imagen}}" class="card-img-top" alt="..." />
+  <div class="card-body">
+    <h5 class="card-title">{{marc.nombre}}</h5>
+    <h5 class="card-title">{{marc.precio}}€</h5>
+    <a [routerLink]="['/detalles/' +  marc.idCubo ]" class="btn btn-info">Detalles</a>
+  </div>
+</div>
